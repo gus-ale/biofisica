@@ -3,134 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú de Videos CINEMATICA</title>
+    <title>Curso de Biofísica CINEMATICA</title>
     <style>
-		
-		#pu{
-			background-color:#BFBFBF
-		}
-		#colortitulo{
-			color :blue;
-			
-		}
-		p{
-			background-color:#4343A3;
-			color : white;
-			height : 50px;
-			padding:0;
-			margin:0;
-			font-size: 15px;
-			text-align : center;
-			line-height : 50px;
-		}			
-        /* Estilos para el menú */
+        body {
+            background-color: #151437;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Estilos del encabezado */
+        .header {
+            background-color: #000000; /* Gris medio */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .header img {
+            width: 140px;
+            heigth :130px;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #FFA500; /* Naranja */
+        }
+
+        /* Estilos del menú */
         .menu {
             float: left;
             width: 300px;
             margin-right: 20px;
-            overflow-y: auto; /* Permitir desplazamiento vertical */
-            max-height: calc(100vh - 40px); /* Altura máxima igual al 100% del viewport menos el margen superior e inferior */
+            background-color: #333; /* Gris oscuro */
+            padding: 10px;
+            border-radius: 5px;
         }
-      
+
+        .menu h2 {
+            color: #FFA500; /* Naranja */
+            text-align: center;
+        }
+
         .menu a {
             display: block;
             padding: 10px;
-            background-color: #1300F2;
+            background-color: #4D4D4D; /* Gris medio */
             color: white;
             text-decoration: none;
-            margin-bottom: 0px;
-            position: relative;
-            padding-left: 40px; /* Espacio para el icono */
-            border :solid 1px #1A1AB3;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            font-weight: bold;
         }
+
         .menu a:hover {
-            background-color: #0056b3;
+            background-color: #FFA500; /* Naranja */
         }
-        .menu #cab{
-			align: center;
-		}	
-        .menu a::before {
-            content: "";
-            width: 24px; /* Tamaño del icono */
-            height: 24px;
-            background-image: url(''); /* URL del ícono */
-            background-size: contain;
-            background-repeat: no-repeat;
-            position: absolute;
-            left: 10px; /* Posición del icono */
-            top: 50%; /* Centrado verticalmente */
-            transform: translateY(-50%);
-        }
-        /* Estilos para los submenús */
+
         .submenu {
             display: none;
             padding-left: 20px;
         }
+
         .submenu a {
-            display: block;
-            padding: 5px;
+            background-color: #B3B3B3; /* Gris claro */
             color: #333;
-            text-decoration: none;
+            font-weight: normal;
         }
-        /* Estilos para el contenedor del video */
+
+        /* Estilo para el contenedor del video */
         #video-container {
-            margin-top: 20px;
-            margin-left: 300px; /* Para dejar espacio al menú */
+            margin-top: 10px;
+            margin-left: 320px;
             text-align: center;
-            background-color :#4D4D4D;
-          
+            background-color: #494854; /* Gris suave */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #FFA500; /* Naranja */
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #FFA500;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Descripción del video */
+        .video-description {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #FFB200;
         }
     </style>
 </head>
-<header>
+<body>
 
-</header>
-<body id ="pu">
-    <div class="menu">
-        <div id ="cab">
-			<img src="">
-		</div>
-		<p>CINEMATICA</p>
-        <a href="#" onclick="loadVideo('zz_oMmLEe9s')">Cantidades escalares y vectoriales</a>
-        <a href="#" onclick="loadVideo('GodQw7XwKeQ')">Mapa conceptual</a>
-        
-        <a href="#" onclick="loadVideo('2E3i5YJYl-jqK0Kx')">M.R.U.</a>
-        <a href="#" onclick="loadVideo('videoId4')">M.R.U.V.</a>
-        <a href="#" onclick="loadVideo('videoId5')">Caída Libre y Tiro Vertical</a>
-        <a href="#" onclick="loadVideo('kKew8Ks0OFg')">Ejercicios PARCIAL 01 al 05</a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios PARCIAL 06 al 10</a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios PARCIAL 11 al 15</a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios PARCIAL 16 al 20</a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios PARCIAL 21 al 25</a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios PARCIAL 26 al 30</a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios PARCIAL 31 al 35</a>
-        <a href="#" onclick="loadVideo('videoId5')">Ejercicios PARCIAL 36 al 37</a>
-
-	<h2>DESCARGA DE PDF</h2>  
-	<a href="PARCIALES.pdf" download>parciales cinemática </a>
-        <a href="PARCIALES.pdf" download>resúmen cinemática </a>  
+    <!-- Encabezado con imagen y texto -->
+    <div class="header">
+        <img src="biofisicap.jpg" alt="Logo">
+        <h1>Bienvenido al Curso de Biofísica : </h1>
+        <p></p>
+        <h1 style= " color: #38F80D;"> CINEMÁTICA</h1>
         
     </div>
-	<div id ="muki">
-		<h1 id="colortitulo">Curso Biofísica CBC - CINEMÁTICA 11-76440462</h1>
-                <a href="index.html">Volver a la página principal</a>
-	</div>
+
+    <div class="menu">
+        <h2>CINEMÁTICA</h2>
+        <!-- Temas del curso -->
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema1')">CONCEPTOS DE CINEMÁTICA</a>
+        <div id="tema1" class="submenu">
+            <a href="#" onclick="loadVideo('WmWIBRZ5qyE', '')">Cantidades escalares y vectoriales</a>
+            <a href="#" onclick="loadVideo('2txVfXrVAM0', '')">Mapa conceptual</a>
+            <a href="#" onclick="loadVideo('Im-PGO1mqKU', '')">Distancia y Desplazamiento</a>
+            <a href="#" onclick="loadVideo('5KW5EXg79Hk', '')">Rapidez y Velocidad</a>
+           
+        </div>
+
+        <a href="javascript:void(0)" onclick="toggleSubmenu('tema2')">M.R.U.</a>
+        <div id="tema2" class="submenu">
+            <a href="#" onclick="loadVideo('F2HQq57AmQg', '')">Conceptos y ecuaciones</a>
+            <a href="#" onclick="loadVideo('ttypVaawirA', '')">Gráficas en el M.R.U.</a>
+            <a href="#" onclick="loadVideo('UQqx7jIcd7Y', '')">Análisis de Gráficas</a>
+            
+             <a href="#" onclick="loadVideo('aHtzVq_-QQ0', '')">Encuentro entre móviles con M.R.U.</a>
+            <a href="#" onclick="loadVideo('KPDSii6JV68', '')">Resúmen de M.R.U.</a>
+        </div>
+		<a href="javascript:void(0)" onclick="toggleSubmenu('tema3')">M.R.U.V.</a>
+        <div id="tema3" class="submenu">
+            <a href="#" onclick="loadVideo('-E_NRxCg7zY', '')">Conceptos y ecuaciones</a>
+            
+            <a href="#" onclick="loadVideo('haMuOIowdRA', '')">Caída Libre y tiro vertical</a>
+            
+             
+        </div>
+		<a href="javascript:void(0)" onclick="toggleSubmenu('tema4')">MODELOS DE PARCIAL</a>
+        <div id="tema4" class="submenu">
+           
+            <a href="#" onclick="loadVideo('OCxKBNFutkQ', ' ')">Ejercicios 01 al 05</a>
+            <a href="#" onclick="loadVideo('4zZh8PyUuvo', '')">Ejercicios 06 al 10</a>
+            <a href="#" onclick="loadVideo('sdiKAq8TFO8', '')">Ejercicios 11 al 15</a>
+            <a href="#" onclick="loadVideo('ocsPiExZHv4', '')">Ejercicios 16 al 20</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejercicios 21 al 25</a>
+             <a href="#" onclick="loadVideo('SZf9UfoQAfU', '')">Ejercicios 26 al 30</a>
+            <a href="#" onclick="loadVideo('Q-2WyX7q0aQ', '')">Ejercicios 31 al 37</a>
+        </div>
+        <!-- Más temas aquí... -->
+
+    </div>
+
     <div id="video-container">
-        <!-- El video se cargará aquí -->
+        <h2><--- Seleccione el video del menú</h2>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/VIDEO_ID?controls=0" frameborder="0" allowfullscreen></iframe>
+        <p class="video-description"></p>
     </div>
 
     <script>
-        // Cargar reproductor de video vacío al cargar la página
-        window.onload = function() {
-            loadVideo('');
-        };
-		
-        function loadVideo(videoId) {
-            var videoContainer = document.getElementById('video-container');
-            videoContainer.innerHTML = '<iframe width="860" height="515" src="https://www.youtube.com/embed/' +videoId+ '" frameborder="0" allowfullscreen></iframe>';
+        // Función para mostrar/ocultar submenús y cerrar los demás
+        function toggleSubmenu(id) {
+            var allSubmenus = document.getElementsByClassName('submenu');
+            
+            // Cerrar todos los submenús
+            for (var i = 0; i < allSubmenus.length; i++) {
+                if (allSubmenus[i].id !== id) {
+                    allSubmenus[i].style.display = 'none';
+                }
+            }
+            
+            // Alternar el submenú clickeado
+            var submenu = document.getElementById(id);
+            submenu.style.display = (submenu.style.display === "block") ? "none" : "block";
         }
 
-       
+        // Función para cargar el video en el contenedor con descripción
+        function loadVideo(videoId, description) {
+            var videoContainer = document.getElementById('video-container');
+            videoContainer.innerHTML = `
+                <h2>Video del Curso de biofísica</h2>
+                <iframe width="640" height="360" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
+                <p class="video-description">${description}</p>`;
+        }
     </script>
+
 </body>
 </html>
+
